@@ -31,7 +31,7 @@ public class ComputadoresService {
             return computadoresRepository.save(p);
         }else{
             Optional<Computadores> paux=computadoresRepository.getComputadores(p.getId());
-            if(paux.isPresent()){
+            if(paux.equals(p)){
                 return computadoresRepository.save(p);
             }else{
                 return p;
