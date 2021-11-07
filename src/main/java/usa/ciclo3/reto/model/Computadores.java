@@ -33,8 +33,6 @@ public class Computadores implements Serializable {
 
     /*@OneToMoney{cascade=CascadeType.PERSIST},mappedBy = "category")*/
 
-    
-
     public Integer getId() {
         return id;
     }
@@ -51,21 +49,40 @@ public class Computadores implements Serializable {
         this.name = name;
     }
 
-    public Integer getPrice() {
-        return price;
+    public String getMarca() {
+        return marca;
     }
 
-    public void setPrice(Integer price) {
-        this.price = price;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
-    public String getDescription() {
-        return description;
+    public Integer getAño() {
+        return año;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setAño(Integer año) {
+        this.año = año;
     }
+
+    public String getDescripción() {
+        return descripción;
+    }
+
+    public void setDescripción(String descripción) {
+        this.descripción = descripción;
+    }
+
+    public String getCategoría() {
+        return categoría;
+    }
+
+    public void setCategoría(String categoría) {
+        this.categoría = categoría;
+    }
+
+    
+
     
     
 }
