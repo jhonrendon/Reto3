@@ -24,11 +24,11 @@ public class Computadores implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
     private String marca;
+    private String name;
     private Integer año;
     private String descripción;
-    private String categoría;
+    private Integer categoría;
     
 
     /*@OneToMoney{cascade=CascadeType.PERSIST},mappedBy = "category")*/
@@ -41,20 +41,20 @@ public class Computadores implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getMarca() {
         return marca;
     }
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getAño() {
@@ -73,15 +73,17 @@ public class Computadores implements Serializable {
         this.descripción = descripción;
     }
 
-    public String getCategoría() {
+    public Integer getCategoría() {
         return categoría;
     }
 
-    public void setCategoría(String categoría) {
+    public void setCategoría(Integer categoría) {
         this.categoría = categoría;
     }
-
     
+  
+
+   
 
     
     
