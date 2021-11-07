@@ -25,8 +25,10 @@ public class Computadores implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private Integer price;
-    private String description;
+    private String marca;
+    private Integer año;
+    private String descripción;
+    private String categoría;
     
 
     /*@OneToMoney{cascade=CascadeType.PERSIST},mappedBy = "category")*/
