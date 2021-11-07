@@ -19,7 +19,7 @@ import javax.persistence.Id;
  * @author jacke
  */
 @Entity
-@Table(name="Computadores")
+@Table(name="computadores")
 public class Computadores implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
